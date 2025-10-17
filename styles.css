@@ -1,0 +1,404 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: white;
+}
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+body.light-mode {
+  background: #ffffff;
+  color: #000000;
+}
+
+
+body.light-mode  {
+  color: #000 !important;
+}
+body.light-mode .hero{
+    color: #000;
+}
+body.light-mode .about-container{
+    color: #fff;
+}
+body.light-mode .headerp{
+    color: #fff;
+}
+body.light-mode .project-link,
+body.light-mode .contact-resume a {
+  color: #a0c800 !important;
+}
+
+body.light-mode .footer {
+  border-top: 1px solid #ddd;
+  color: #555 !important;
+}
+body.light-mode .headerp{
+    color: #fff;
+}
+body.light-mode .about{
+    color: #fff;
+}
+body.light-mode .project-box{
+    color: #fff ;
+}
+body.light-mode .skill{
+    color: #fff ;
+}
+body.light-mode .form-group{
+    color: #fff ;
+}
+body.light-mode .contact{
+    color: #fff ;
+}
+body.light-mode .theme-toggle {
+  color: #fff !important;
+}
+header {
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+.headerp{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+}
+
+header h3 {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.btn, .btn-outline {
+
+  padding: 12px 24px;
+  border-radius: 20px;
+  margin-right: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn {
+  background: #d3e97a;
+  color: #000;
+}
+
+.btn:hover {
+  background: #a0c800;
+}
+
+.btn-outline {
+  border: 2px solid #d3e97a;
+  color: #d3e97a;
+}
+
+.btn-outline:hover {
+  background: #a0c800;
+  color: #000;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  font-weight: bold;
+  color: #fff;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #d3e97a;
+}
+
+.hero {
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-height: 100vh;
+}
+
+.hero h1 {
+    font-size: 80px;
+    margin: 10px 0;
+}
+
+.hero .name {
+    color: #8b5cf6;
+}
+
+.hero p {
+    font-size: 24px;
+    color: #999;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #8b5cf6;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7c3aed;
+}
+
+
+.about {
+    padding: 80px 40px;
+    background-color: #111;
+}
+
+.about h2 {
+    font-size: 50px;
+    color: #8b5cf6;
+    margin-bottom: 30px;
+}
+
+.about-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #bbb;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 350px;
+    border-radius: 20px;
+}
+
+.projects {
+    padding: 80px 40px;
+}
+
+.projects h2 {
+    font-size: 50px;
+    color: #8b5cf6;
+    margin-bottom: 40px;
+}
+
+.project-box {
+    background-color: #1a1a1a;
+    padding: 40px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    border: 1px solid #2a2a2a;
+}
+
+.project-box:hover {
+    border-color: #8b5cf6;
+}
+
+.project-box h3 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.project-box p {
+    font-size: 18px;
+    color: #999;
+}
+
+.skills {
+    padding: 80px 40px;
+    background-color: #111;
+}
+
+.skills h2 {
+    font-size: 50px;
+    color: #8b5cf6;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill img:hover {
+    transform: scale(1.1);
+}
+
+.skill p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.contact {
+    padding: 80px 40px;
+}
+
+.contact h2 {
+    font-size: 50px;
+    color: #8b5cf6;
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 600px;
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #0a0a0a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #8b5cf6;
+}
+
+.radio-group {
+    margin-top: 10px;
+}
+
+input[type="radio"] {
+    margin: 0 5px 0 15px;
+}
+
+.button-group {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+input[type="submit"] {
+    flex: 1;
+    padding: 12px;
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #7c3aed;
+}
+
+input[type="reset"] {
+    flex: 1;
+    padding: 12px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #8b5cf6;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover {
+    background-color: #8b5cf6;
+}
+
+
+footer {
+    background-color: #1a1a1a;
+    padding: 30px;
+    text-align: center;
+    color: #666;
+}
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+    .skills-container {
+        gap: 30px;
+    }
+
+    .skill img {
+        width: 100px;
+        height: 100px;
+    }
+}

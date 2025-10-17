@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="headerp">
+         <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact me</a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle">☀️</button>
+          </li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <h1>Hi</h1>
+        <h1>I'm <span class="name">Adelia</span></h1>
+        <h1>Front-end Developer</h1>
+        <p>Building beautiful websites with clean code</p>
+        
+        <div class="buttons">
+            <a href="#projects" class="btn">See Projects</a>
+            <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    I am a second-year college student specializing in front-end development. 
+                    Over the past year, I have been actively learning modern web technologies 
+                    and creating projects both as part of my coursework and independently. 
+                    I continuously develop my technical and creative skills by exploring related fields.
+                </p>
+        
+            </div>
+
+            <div class="about-image">
+                <img src="img/me.jpg" alt="My photo">
+            </div>
+        </div>
+
+        <div class="accordion">
+            <button class="acc-btn">Что такое фронтенд?</button>
+            <div class="acc-panel" style="display:none;">Это всё, что видит пользователь в браузере.</div>
+            
+            <button class="acc-btn">Какие технологии?</button>
+            <div class="acc-panel" style="display:none;">HTML, CSS, JavaScript.</div>
+</div>
+    </section>
+
+    <section id="projects" class="projects">
+
+        <h2>Recent Projects</h2>
+        
+        <div class="project-box">
+            <h3>Hackaton</h3>
+            <p>First experience working in a team on a project with tight deadlines</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Website</h3>
+            <p>My college project - a fully responsive website built from scratch</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Portfolio</h3>
+            <p>Personal portfolio website showcasing my work and skills</p>
+        </div>
+
+    </section>
+
+    <section class="skills">
+        <h2>My Instruments</h2>
+        <div class="skills-container">
+
+            <div class="skill">
+                <img src="img/html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+
+            <div class="skill">
+                <img src="img/css.jpeg" alt="CSS">
+                <p>CSS</p>
+            </div>
+
+            <div class="skill">
+                <img src="img/js2.jpg" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contactForm" class="contact">
+        <h2 id="contact">Contact Me</h2>
+        <form action="submit.php" method="POST">
+            
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="SPants@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
+            </div>
+
+            <div class="form-group">
+                <label>Title:</label>
+                <div class="radio-group">
+                    <input type="radio" id="mr" name="title" value="Mr">
+                    <label for="mr">Mr.</label>
+                    
+                    <input type="radio" id="mrs" name="title" value="Mrs">
+                    <label for="mrs">Mrs.</label>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+        <button id="toTopBtn" style="position:fixed;right:16px;bottom:16px;display:none;">
+            ↑ Наверх
+        </button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Adelia. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
